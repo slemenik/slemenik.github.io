@@ -5,21 +5,27 @@
     <meta charset="UTF-8" />
     <title>Učenje klavirja</title>
     <script type="text/javascript" src="js/phaser.min.js"></script>
-    <script type="text/javascript" src="js/Tone.min.js"></script>
     <script type="text/javascript" src="js/MidiConvert.js"></script>
+    <script type="text/javascript" src="js/menu.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
-    <!-- <script type="text/javascript" src="js/midi.js"></script> -->
+    <script type="text/javascript" src="js/game.js"></script>
+    <style>
+        @font-face {
+            font-family: 'menuFont';
+            src: url('assets/font/RawengulkSans-094.otf');
+        }
+        canvas {
+            display : block;
+            margin : auto;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
 </head>
-<style>
-            /*body {
-                background: #aabbcc;
-                margin: 0;
-                padding: 0;
-            }*/
-
-            canvas {   display : block;   margin : auto;}
-</style>
 <body>
+    <div style="font-family: menuFont,serif;"></div><!-- made for loading font before game starts-->
     <div id="canvas"> </div>
 </body>  
 </html>  
